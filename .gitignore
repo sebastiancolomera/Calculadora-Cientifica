@@ -1,14 +1,16 @@
-# Compiled class file
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+gen/
+
+# Archivos del Sistema
+.DS_Store
+Thumbs.db
+
+# Java compilado y logs
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
 # Package Files #
 *.war
@@ -16,6 +18,7 @@
 *.ear
 *.tar.gz
 *.rar
+*.zip
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
