@@ -1,6 +1,6 @@
 package calculadora;
 
-public class CalculadoraAritmetica {
+public class OperacionesBasicas {
 
     public double sumar(double a, double b) {
         return a + b;
