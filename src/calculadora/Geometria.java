@@ -25,4 +25,29 @@ public class Geometria {
     public static double areaCirculo(double radio) {
         return Math.PI * Math.pow(radio, 2);
     }
+
+    public static double areaCubo(double lado) {
+        return 6 * Math.pow(lado, 2);
+    }
+
+    public static double volumenCubo(double lado) {
+        return Math.pow(lado, 3);
+    }
+
+    public static double areaEsfera(double radio) {
+        return 4 * Math.PI * Math.pow(radio, 2);
+    }
+
+    public static double volumenEsfera(double radio) {
+        return (4.0 / 3.0) * Math.PI * Math.pow(radio, 3);
+    }
+
+    public static double areaCono(double radio, double altura) {
+        double generatriz = Math.sqrt(Math.pow(radio, 2) + Math.pow(altura, 2));
+        return Math.PI * radio * (radio + generatriz);
+    }
+
+    public static double volumenCono(double radio, double altura) {
+        return (Math.PI * Math.pow(radio, 2) * altura) / 3.0;
+    }
 }
