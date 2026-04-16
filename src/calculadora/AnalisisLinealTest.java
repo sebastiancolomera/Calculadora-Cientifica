@@ -2,7 +2,7 @@ package calculadora;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-public class CalculadoraTest {
+public class AnalisisLinealTest {
 
     @Test
     void testResolverSistema2x2() {
