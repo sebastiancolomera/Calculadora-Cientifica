@@ -20,4 +20,22 @@ public class CalculadoraTest {
             analisis.resolverSistema2x2(1, 2, 3, 2, 4, 6);
         }, "El sistema no debería tener solución única (determinante es cero)");
     }
+
+    @Test
+    void testEcuacionRectaExitosa() {
+        AnalisisLineal al = new AnalisisLineal();
+        // Puntos (0,0) y (2,4) -> La pendiente debería ser 2 y el intercepto 0 (y = 2x)
+        double[] resultado = al.obtenerEcuacionRecta(0, 0, 2, 4);
+
+        assertArrayEquals(new double[]{2.0, 0.0}, resultado, 0.001);
+    }
+
+    @Test
+    void testEcuacionRectaVertical() {
+        AnalisisLineal al = new AnalisisLineal();
+        // Puntos (2,5) y (2,10) -> x1 y x2 son iguales, debe fallar
+        assertThrows(ArithmeticException.class, () -> {
+            al.obtenerEcuacionRecta(2, 5, 2, 10);
+        });
+    }
 }
