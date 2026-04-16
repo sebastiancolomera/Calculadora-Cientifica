@@ -1,4 +1,4 @@
-package cl.duoc.calculadora;
+package calculadora;
 
 public class CalculadoraTest {
 }
